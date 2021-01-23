@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "311036239422",
+    "project_id": "jobconsolidationapp",
+    "storage_bucket": "jobconsolidationapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311036239422:android:87af42b06dc4cad6ebbb6f",
+        "android_client_info": {
+          "package_name": "com.example.jobconsolidation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "311036239422-83t548q01t75igoqt5oeegt176ol5056.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAJ5WHCmpqKqDdxy2FJK8njPzsDu7Jjiw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "311036239422-83t548q01t75igoqt5oeegt176ol5056.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
