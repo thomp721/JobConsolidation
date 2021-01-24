@@ -6,12 +6,16 @@ public class Company {
     private String field;
     private String responseDate;
     private String competitiveness;
-    private boolean hasPreference;
+    private String hasPreference;
     private String preference;
-    private boolean requiresPriorExperience;
+    private String requiresPriorExperience;
+
+    public Company () {
+        name = "failure";
+    }
 
     public Company (String name, String url, String field, String responseDate, String competitiveness,
-                    boolean hasPreference, String preference, boolean requiresPriorExperience) {
+                    String hasPreference, String preference, String requiresPriorExperience) {
         this.name = name;
         this.url = url;
         this.field = field;
@@ -62,11 +66,11 @@ public class Company {
         this.competitiveness = competitiveness;
     }
 
-    public boolean isHasPreference() {
+    public String isHasPreference() {
         return hasPreference;
     }
 
-    public void setHasPreference(boolean hasPreference) {
+    public void setHasPreference(String hasPreference) {
         this.hasPreference = hasPreference;
     }
 
@@ -78,11 +82,18 @@ public class Company {
         this.preference = preference;
     }
 
-    public boolean isRequiresPriorExperience() {
+    public String isRequiresPriorExperience() {
         return requiresPriorExperience;
     }
 
-    public void setRequiresPriorExperience(boolean requiresPriorExperience) {
+    public void setRequiresPriorExperience(String requiresPriorExperience) {
         this.requiresPriorExperience = requiresPriorExperience;
+    }
+
+    public String toString() {
+        return "URL: " + url + "\n" + "Field: " + field + "\n" + "Response Date: " + responseDate + "\n" + "Competetiveness: " + competitiveness + "\n" + "Preferences : " + preference + "\n" + "Requires Prior Experience? " + requiresPriorExperience;
+
+
+
     }
 }
