@@ -37,6 +37,30 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        Company c = new Company("Google", "google.com", "CS", "04/04", "high", "false", "", "false");
+        Company d = new Company("Sony", "sony.com", "Game Dev", "01/02", "high", "true", "SQL, Node JS", "false");
+
+        /*DefaultHttpClient httpClient = new DefaultHttpClient();
+        HttpGet httpGet = new HttpGet("http://www.someplace.com");
+        ResponseHandler<String> resHandler = new BasicResponseHandler();
+        String page = httpClient.execute(httpGet, resHandler);*/
+        mDatabaseReference = mDatabase.getReference().child(c.getName()).child("name");
+        mDatabaseReference.setValue(c.getName());
+        mDatabaseReference = mDatabase.getReference().child(c.getName()).child("url");
+        mDatabaseReference.setValue(c.getUrl());
+        mDatabaseReference = mDatabase.getReference().child(c.getName()).child("field");
+        mDatabaseReference.setValue(c.getField());
+        mDatabaseReference = mDatabase.getReference().child(c.getName()).child("responseDate");
+        mDatabaseReference.setValue(c.getResponseDate());
+        mDatabaseReference = mDatabase.getReference().child(c.getName()).child("competetiveness");
+        mDatabaseReference.setValue(c.getCompetitiveness());
+        mDatabaseReference = mDatabase.getReference().child(c.getName()).child("hasPreference");
+        mDatabaseReference.setValue(c.isHasPreference());
+        mDatabaseReference = mDatabase.getReference().child(c.getName()).child("preference");
+        mDatabaseReference.setValue(c.getPreference());
+        mDatabaseReference = mDatabase.getReference().child(c.getName()).child("requiresPriorExperience");
+        mDatabaseReference.setValue(c.isRequiresPriorExperience());
+        //mDatabaseReference.child("URL:").push().setValue(c.getUrl());
 
 
         spinner = (Spinner) findViewById(R.id.spinner2);
